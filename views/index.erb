@@ -1,0 +1,37 @@
+
+<!DOCtype html>
+
+
+<link rel = "stylesheet" href = "css/style.css">
+
+<header>
+<h4>Random Name Generator</h4>
+</header>
+
+<br>
+<br>
+
+<p>Please enter the number of students in attendance today.</p>
+
+<form method = "post" action = "pairs" id = "text_box">
+    <input type ="number" min = 2 autofocus = "autofocus" id ="myInput" oninput = "myFunction()" >
+    <p id = "demo"></p>
+    <input type = "submit">
+</form></center>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myInput").value;
+        var y = "";
+        for (i = 0; i < x; i++) 
+        document.getElementById("demo").innerHTML = "Enter their names in the boxes below:<br>";
+            for (var i = 1; i <= x; i++){
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "text" + i;
+            document.getElementById("demo").appendChild(input).value;
+            }
+    }
+</script>
+
+
