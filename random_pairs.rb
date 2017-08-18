@@ -28,4 +28,3 @@ def pair(names)
 	
 end
 
-

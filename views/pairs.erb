@@ -4,17 +4,32 @@
 <link rel = "stylesheet" href = "css/style.css">
 
 <html>
-<body>
+    <body>
 
-<form action="pairs" method="post">
-    Random pairs:<br>
-    <%=pair%>
-  <input type="checkbox" name="good_match" value="Yes"> Good match.
-  <input type="checkbox" name="good_match" value="No" checked="checked"> Not a good match. <br>
-  <input type="submit" value="Submit">
-</form>
+        <form action="pairs" method="post">
+            
+            <script>
+                // function myFunction_z(z) {
+                // z = 0
+                // z = z + 1
+                // }
+            </script>
 
-</body>
+            <!-- The idea above was for z to act as a counter to 
+            itterate through the array pair one element at a time by calling
+            pair below as pair[z]; needless to say, it did not work. -->
+
+            Random pairs:<br>
+            <%=pair%>
+
+
+            <input type="checkbox" name="good_match" value="Yes" > Good match.
+            <input type="checkbox" name="good_match" value="No" > Not a good match. <br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </body>
 </html>
 
 
@@ -40,6 +55,8 @@ If you would like to create more random pairs, please enter <br> the number of s
             var input = document.createElement("input");
             input.type = "text";
             input.name = "text" + i;
+            input.required = true;
+            input.placeholder = "Enter name here."
             document.getElementById("demo").appendChild(input).value;
             }
     }
