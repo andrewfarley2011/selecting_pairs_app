@@ -3,8 +3,21 @@
 
 <link rel = "stylesheet" href = "css/style.css">
 
-Random pairs:<br>
-<%=pair%><br>
+<html>
+<body>
+
+<form action="pairs" method="post">
+    Random pairs:<br>
+    <%=pair%>
+  <input type="checkbox" name="good_match" value="Yes"> Good match.
+  <input type="checkbox" name="good_match" value="No" checked="checked"> Not a good match. <br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
 <br>
 If you would like to create more random pairs, please enter <br> the number of students that you would like to pair.<br>
 <br>
