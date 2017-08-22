@@ -1,0 +1,26 @@
+
+<!DOCtype html>
+
+<link rel = "stylesheet" href = "css/style.css">
+
+<html>
+
+    <center>
+
+        <header>
+            <h1>Please confirm your pairs.</h1>
+        </header>
+
+        <body>
+            <form method="post" action="/confirm_pairs">
+
+                <%names.each do |group|%>
+                <center><p> ~ <%=group%> </p></center>
+                <%end%> 
+        </body>
+
+    </center>
+    
+</html>
+
+
